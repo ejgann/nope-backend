@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
-  resources :reviews
-  resources :restaurants
-  resources :categories
-  resources :users
+  
+  namespace :api do
+    namespace :v1 do
+      resources :users
+      resources :reviews
+      resources :restaurants do
+        resources :categories
+      end
+    end
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
