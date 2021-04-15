@@ -1,4 +1,4 @@
-require 'faker'
+# require 'faker'
 
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
@@ -34,13 +34,13 @@ mandy = User.create(username: "mandy", email: "m@mail.com")
 #         category_id: rand(1..4)
 #     )
 # end
-Restaurant.create(name: "Panera", phone: "123456789", street: "123 Abc St", city: "Denver", state: "CO", zip: "65201", category_id: 4)
+rest1 = Restaurant.create(name: "Panera", phone: "123456789", street: "123 Abc St", city: "Denver", state: "CO", zip: "65201", category_id: 4)
 
-Restaurant.create(name: "Sunrise Cafe", phone: "123456789", street: "123 Abc St", city: "Denver", state: "CO", zip: "65201", category_id: 1)
+rest2 = Restaurant.create(name: "Sunrise Cafe", phone: "123456789", street: "123 Abc St", city: "Denver", state: "CO", zip: "65201", category_id: 1)
 
-Restaurant.create(name: "Bueno Burrito", phone: "123456789", street: "123 Abc St", city: "Denver", state: "CO", zip: "65201", category_id: 2)
+rest3 = Restaurant.create(name: "Bueno Burrito", phone: "123456789", street: "123 Abc St", city: "Denver", state: "CO", zip: "65201", category_id: 2)
 
-Restaurant.create(name: "Bistro Italiano", phone: "123456789", street: "123 Abc St", city: "Denver", state: "CO", zip: "65201", category_id: 3)
+rest4 = Restaurant.create(name: "Bistro Italiano", phone: "123456789", street: "123 Abc St", city: "Denver", state: "CO", zip: "65201", category_id: 3)
 
 
 # CATEGORIES
